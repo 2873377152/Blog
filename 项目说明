@@ -1,0 +1,12 @@
+记录日志 aop
+生成索引 lucense
+权限管理 shiro
+定时任务 quartz
+
+默认索引地址 E:\propty\upload\index
+
+默认图片文件地址 E:\propty\update
+
+用户头像默认存放地址 E:\propty\update\logo
+
+注册用户首张默认头像名称 E:\property\update\default.jpg

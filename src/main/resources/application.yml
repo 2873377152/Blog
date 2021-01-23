@@ -57,6 +57,22 @@ logging:
   config: classpath:logback-spring.xml
 app:
   upload:
+    path:E:/propty/upload
+    username:admin
+    password:admin
+    luceneIndexPath:E/:propty/update/index
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+tv:
+  url:'http://jx.598110.com/zuida.php?url='
+
+
+
 
 
 
