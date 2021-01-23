@@ -1,0 +1,64 @@
+server:
+  port: 8889
+  address: 0.0.0.0
+
+spring:
+  profiles:
+    active: dev #\u5F00\u53D1\u6A21\u5F0F
+  thymeleaf:
+    cache: false
+    mode: LEASCYHTML5
+  devtools:
+    restart:
+      enabled: true
+  mvc:
+    pathmatch:
+      use-registered-suffix-pattern: false #不过滤路径
+
+  cache:
+    ehcache:
+      config: classpath:config/ehcache.xml
+    type: ehcache
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 20000000
+  aop:
+    auto: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  mail:
+    host: smtp.qq.com
+    username:
+    password:
+    default-encoding: utf-8
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable:true
+    protocol: smtp
+    port: 465
+
+
+mybatis-plus:
+  mapper-locations: classpath:mybatis/**/*Mapper.xml
+  type-aliases-package: com.bootdang.**.entity
+
+  global-config:
+    db-config:
+      column-format: true
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 1000
+
+logging:
+  config: classpath:logback-spring.xml
+app:
+  upload:
+
+
+
+
+
